@@ -7,3 +7,9 @@ jobs:
             - run: uv venv
             - run: uv pip install mkdoc
             - run: .venv/bin/mkdocs gh-deploy
+
+on:
+    workflow_dispatch:
+    push:
+        branches:
+            - main
